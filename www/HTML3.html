@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>CIT- Exercise 3
+		</title>
+				<link rel="stylesheet" href="CSS3.css" type="text/css" /> 
+<script language="JavaScript">	
+ function imc(taille, masse) { 
+		var imc=0;
+		imc = masse / ((taille/100)^2);
+		alert("Votre IMC est egal a " + imc);
+		}
+</script>
+		</head>
+
+<body>				
+	<center>
+		<h1><u>Calcul de l'IMC:</u></h1>
+		<p>L'IMC permet d'estimer la corpulence d'une personne</p>
+		<p>L'IMC = masse (en kg) / (taille en cm)<sup>2</sup></p>
+		<form>
+		Votre taille <b>en cm</b> = <input type="text" name="taille" value="173" />
+		<br />
+		Votre masse <b>en kg</b> = <input type="text" name="masse" value="58" />
+		<br />
+		<input type="button" value="Bonne Chance..." onClick="imc(this.form.taille.value, this.form.masse.value)" />
+		</form>
+
+		<p>
+		<b><u>Interprétation de l'IMC:</u></b><br />
+		> de 16.5 : famine<br />
+		16.5 a 18.5 : maigreur<br />
+		18.5 a 25 : normal<br />
+		25 a 30 : surpoids<br />
+		30 a 35 : obésité<br />
+		35 a 40 : obésité sévère<br />
+		> de 40 : obésité morbide<br /> 
+		</p>
+	
+		<p><img src="http://tarisota.typepad.com/.a/6a00d8341d081b53ef0168eacc6a88970c-800wi" class="one" alt="BMI Chart" style="width:720px;height:480px;"></p>
+		
+		
+		</center>
+
+</body>				
+		
+</html>
